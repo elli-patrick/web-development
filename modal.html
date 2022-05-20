@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <button onClick="toggleMode()">toggle mode</button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="./responsive.html">Responsive Web Design</a></li>
+                <li><a href="./modal.html">Modal</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <button class="button open-button">open modal</button>
+
+        <dialog class="modal" id="modal">
+            <h2>This is soooo cool!</h2>
+            <p>This modal is built with the new html dialog element. Let's try it out and make it accessible.</p>
+            <button class="button close-button">Agree</button>
+            <form class="form" method="dialog">
+                <label>Your name <input type="text"></label>
+                <label>Your email <input type="email"></label>
+                <button class="button" type="submit">submit form</button>
+            </form>
+        </dialog>
+    </main>
+</body>
+<script src="./main.js" type="text/javascript"></script>
+</html>
